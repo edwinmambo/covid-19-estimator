@@ -72,14 +72,10 @@ def estimator(data):
         severeImpact['infectionsByRequestedTime'] * \
         majority * avgIncome * period
 
-    print(data)
-    print(impact)
-    print(severeImpact)
+    dicts = [data, impact, severeImpact]
+    names = ['data', 'impact', 'severeImpact']
 
-    dicts = {data, impact, severeImpact}
-    data = demjson.encode(dicts)
-
-    return data
+    return {k: v for k, v in zip(names, dicts)}
 
 
 print(estimator(inputdata))
