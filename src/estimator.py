@@ -1,2 +1,7 @@
+import demjson
+
+
 def estimator(data):
-  return data
+    data = demjson.decode(data)
+    print(data)
+    return data
