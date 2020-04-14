@@ -1,4 +1,9 @@
-from data import data1
+from data import data1, data2
+
+
+def estimator(data):
+    print(data)
+    return data
 
 
 def covid19ImpactEstimator(data):
@@ -35,8 +40,11 @@ def covid19ImpactEstimator(data):
         "impact": impact,
         "severeImpact": severeImpact
     }
+    output2 = {
+        "data": data,
+        "estimate": estimate
+    }
+    return output2
 
-    return output1
 
-
-covid19ImpactEstimator(data1)
+print(covid19ImpactEstimator(data2))
