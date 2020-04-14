@@ -46,6 +46,3 @@ def solve(data, multiplier):
             "casesForVentilatorsByRequestedTime": casesForVentilatorsByRequestedTime,
             "dollarsInFlight": dollarsInFlight
             }
-
-from data import data2
-print(estimator(data2))
